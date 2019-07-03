@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <node name="face_tracker_node"
+          pkg="pan_and_tilt_control"
+          type="face_tracker.py"
+          respawn="false"
+          output="screen"
+          args="">
+    </node>
+</launch>

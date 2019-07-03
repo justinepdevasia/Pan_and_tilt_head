@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <node name="pan_and_tilt_client_node"
+          pkg="pan_and_tilt_control"
+          type="pan_and_tilt_client.py"
+          respawn="false"
+          output="screen"
+          args=""/>
+</launch>

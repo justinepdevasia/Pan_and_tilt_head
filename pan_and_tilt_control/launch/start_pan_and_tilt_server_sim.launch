@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+    <arg name="hardware_version" default="simulated" />
+    <arg name="is_raspberry" default="false" />
+
+    <node name="pan_and_tilt_server_node"
+          pkg="pan_and_tilt_control"
+          type="pan_and_tilt_server.py"
+          respawn="false"
+          output="screen"
+          args="$(arg hardware_version) $(arg is_raspberry)"/>
+</launch>

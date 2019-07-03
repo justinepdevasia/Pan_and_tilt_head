@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+    <include file="$(find pan_and_tilt_control)/launch/start_pan_and_tilt_server.launch">
+        <arg name="hardware_version" value="real" />
+        <arg name="is_raspberry" value="true" />
+    </include>
+
+    <node name="pan_and_tilt_client_node"
+          pkg="pan_and_tilt_control"
+          type="pan_and_tilt_client.py"
+          respawn="false"
+          output="screen"
+          args=""/>
+</launch>
